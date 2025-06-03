@@ -3,3 +3,13 @@
 // Example: findMissingNumber([1, 2, 4, 5]) should return 3.
 
 console.log(findMissingNumber([1, 2, 4, 5])); // Expected output: 3
+
+function findMissingNumber(arr) {
+  let n = arr.length + 1;
+
+  for (let i = 1; i <= n; i++) {
+    if (!arr.includes(i)) {
+      return i;
+    }
+  }
+}
